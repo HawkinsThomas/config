@@ -12,7 +12,7 @@ antigen use oh-my-zsh
 antigen bundle git
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle z-shell/zsh-navigation-tools@main
-antigen bendle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-syntax-highlighting
 
 antigen theme romkatv/powerlevel10k
 antigen apply
@@ -24,6 +24,8 @@ antigen apply
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
+
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#ff04ff"
 
 export NVM_DIR="$HOME/.nvm"
 source $(brew --prefix nvm)/nvm.sh
